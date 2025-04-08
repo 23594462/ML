@@ -302,7 +302,7 @@ from sklearn.metrics import accuracy_score
 # App Title
 st.title("🚗 Car Evaluation Classifier using Random Forest & Streamlit")
 st.write("Predict the car condition using Machine Learning based on various features.")
-st.markdown("👩‍💻 **Made by:Namrata**")
+st.markdown("👩‍💻 **Made by:Punam**")
 
 # File uploader
 uploaded_file = st.file_uploader("📁 Upload your car.csv file", type=['csv'])
@@ -346,6 +346,6 @@ if uploaded_file is not None:
     decoded_label = pd.Series(df[df.columns[-1]].unique())[prediction]
     st.success(f"✅ Predicted Condition: {decoded_label}")
 
-    st.markdown("❤️ **Made with love Namrata**")
+    st.markdown("❤️ **Made with love Punam**")
 else:
     st.warning("⚠️ Please upload the car.csv file to proceed.")
